@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dkm3epclu05yy"]
+
+[ext_resource type="PackedScene" uid="uid://dq8yux24wgo1x" path="res://bookshelf.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=779552698]
+
+[node name="Bookshelf" parent="." unique_id=455542595 instance=ExtResource("1_ig7tw")]
+position = Vector2(38, 14)
+
+[node name="Bookshelf2" parent="." unique_id=284252668 instance=ExtResource("1_ig7tw")]
+position = Vector2(238, 15)
+
+[node name="Bookshelf3" parent="." unique_id=1332202446 instance=ExtResource("1_ig7tw")]
+position = Vector2(439, 15)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1848525199]
+position = Vector2(255, 40)
