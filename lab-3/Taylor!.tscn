@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dgbrifpqmqrrc"]
+
+[ext_resource type="Script" uid="uid://bckfcsomdtdm5" path="res://label.gd" id="1_baiqr"]
+
+[node name="Node2D" type="Node2D" unique_id=758325405]
+
+[node name="Label" type="Label" parent="." unique_id=647285873]
+offset_left = 142.0
+offset_top = 69.0
+offset_right = 658.0
+offset_bottom = 372.0
+text = "Hello this is the scene Taylor worked on. Weeee!!!!!"
+script = ExtResource("1_baiqr")
