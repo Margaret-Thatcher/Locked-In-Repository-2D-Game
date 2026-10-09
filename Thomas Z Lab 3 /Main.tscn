@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://2446d6lqhdmx"]
+
+[ext_resource type="Texture2D" uid="uid://c78qxhob1jhmq" path="res://Pictures/Squid 2.png" id="1_uu6xs"]
+[ext_resource type="Script" uid="uid://du7dtj7w7wj3j" path="res://squid.gd" id="2_r0du0"]
+
+[node name="Node2D" type="Node2D" unique_id=651143205]
+
+[node name="Squid" type="Sprite2D" parent="." unique_id=2031723774]
+position = Vector2(214, 429)
+scale = Vector2(0.09667969, 0.08372728)
+texture = ExtResource("1_uu6xs")
+script = ExtResource("2_r0du0")
