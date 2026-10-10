@@ -11,6 +11,9 @@ export.cfg
 export_credentials.cfg
 *.tmp
 
+git config core.protectNTFS false
+git checkout HEAD -f
+
 # Imported translations (automatically generated from CSV files)
 *.translation
 
