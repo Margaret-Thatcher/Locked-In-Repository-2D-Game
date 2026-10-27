@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bd0ohfec2rr7s"
+path="res://.godot/imported/wood floor creaks sound wood floor creaking sound effect.mp3-47f64cc6d6822cb90e7b3fee57426e31.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/wood floor creaks sound wood floor creaking sound effect.mp3"
+dest_files=["res://.godot/imported/wood floor creaks sound wood floor creaking sound effect.mp3-47f64cc6d6822cb90e7b3fee57426e31.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

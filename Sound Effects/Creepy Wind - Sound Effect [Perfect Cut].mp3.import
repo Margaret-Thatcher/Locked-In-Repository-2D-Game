@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1ev2rfvu1edb"
+path="res://.godot/imported/Creepy Wind - Sound Effect [Perfect Cut].mp3-67c1476359e6271de97aca799a439af1.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/Creepy Wind - Sound Effect [Perfect Cut].mp3"
+dest_files=["res://.godot/imported/Creepy Wind - Sound Effect [Perfect Cut].mp3-67c1476359e6271de97aca799a439af1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cm6usq5rad61c"]
+
+[ext_resource type="Texture2D" uid="uid://bs2233ijdgjdr" path="res://Animations 2D Game/Jumpscare V2.png" id="1_ioddx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45od6"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gni6d"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxst3"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgwyf"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ga7h"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfa6o"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4me46"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg626"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8jyk"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jchd6"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa0c8"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfa6v"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(384, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0rpq"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7p17"]
+atlas = ExtResource("1_ioddx")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2c08n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45od6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gni6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxst3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgwyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ga7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfa6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4me46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sg626")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8jyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jchd6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wa0c8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfa6v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0rpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7p17")
+}],
+"loop": 0,
+"name": &"jumpscare",
+"speed": 12.0
+}]
+
+[node name="Jumpscare" type="Node2D" unique_id=533694356]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1881235137]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1873691514]
+position = Vector2(576, 324)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_2c08n")
+animation = &"jumpscare"
+autoplay = "jumpscare"

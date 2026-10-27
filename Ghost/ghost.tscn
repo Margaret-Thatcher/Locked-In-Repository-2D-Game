@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ds0o5i6yvlje5"]
+
+[ext_resource type="Script" uid="uid://xbldcpespu5f" path="res://Ghost/ghost.gd" id="1_uexgx"]
+[ext_resource type="Texture2D" uid="uid://cekyd2d07cr8y" path="res://Animations 2D Game/Scary Ahh Demon.png" id="2_rhyd0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bs0kc"]
+atlas = ExtResource("2_rhyd0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lky7i"]
+atlas = ExtResource("2_rhyd0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyk2k"]
+atlas = ExtResource("2_rhyd0")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bsplv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bs0kc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lky7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyk2k")
+}],
+"loop": 1,
+"name": &"float",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7g10s"]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sfk03"]
+radius = 150.0
+
+[node name="Ghost" type="Area2D" unique_id=4503764]
+script = ExtResource("1_uexgx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1280736447]
+sprite_frames = SubResource("SpriteFrames_bsplv")
+animation = &"float"
+autoplay = "float"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1280197052]
+shape = SubResource("CircleShape2D_7g10s")
+
+[node name="Vision" type="Area2D" parent="." unique_id=974158194]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vision" unique_id=897250917]
+shape = SubResource("CircleShape2D_sfk03")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]
+[connection signal="body_exited" from="Vision" to="." method="_on_vision_body_exited"]
