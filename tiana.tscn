@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bqgid2sq6n6c6"]
+
+[ext_resource type="Texture2D" uid="uid://bwx8ur62ofkcs" path="res://woodchair.png" id="1_aa20s"]
+
+[node name="Tiana" type="Node2D" unique_id=454906564]
+
+[node name="Woodchair" type="Sprite2D" parent="." unique_id=52042122]
+position = Vector2(109.00003, 423.09802)
+scale = Vector2(0.08282584, 0.08282584)
+texture = ExtResource("1_aa20s")

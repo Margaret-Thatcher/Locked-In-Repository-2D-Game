@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dq8yux24wgo1x"]
+
+[ext_resource type="Texture2D" uid="uid://cdvyylamq387y" path="res://bookshelf.png" id="1_bhfym"]
+
+[node name="Bookshelf" type="Node2D" unique_id=455542595]
+
+[node name="Bookshelf" type="Sprite2D" parent="." unique_id=297014975]
+texture = ExtResource("1_bhfym")
