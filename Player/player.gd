@@ -30,6 +30,9 @@ func _physics_process(delta):
 	# not moving
 	if velocity == Vector2(0,0):
 		$AnimatedSprite2D.play("idle")
+		$Footsteps.stop()
+	elif $Footsteps.playing == false:
+		$Footsteps.play()
 
 	move_and_slide()
 
