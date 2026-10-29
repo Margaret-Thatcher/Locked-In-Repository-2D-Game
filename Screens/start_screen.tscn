@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://dhf50ue4ie725"]
+
+[ext_resource type="Script" uid="uid://ttb8rgpn3atw" path="res://Screens/start_screen.gd" id="1_1kmab"]
+[ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="2_fo2qh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x20jx"]
+atlas = ExtResource("2_fo2qh")
+region = Rect2(890, 625, 655, 165)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1oc81"]
+atlas = ExtResource("2_fo2qh")
+region = Rect2(1050, 830, 400, 95)
+
+[node name="StartScreen" type="Control" unique_id=415436299]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_1kmab")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1112009987]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Main" type="Control" parent="." unique_id=748463520]
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Title" type="TextureRect" parent="Main" unique_id=1020045273]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 130.0
+offset_right = 903.0
+offset_bottom = 295.0
+texture = SubResource("AtlasTexture_x20jx")
+
+[node name="Start" type="TextureButton" parent="Main" unique_id=3389514]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 340.0
+offset_right = 776.0
+offset_bottom = 435.0
+texture_normal = SubResource("AtlasTexture_1oc81")
+
+[node name="Tutorial" type="Button" parent="Main" unique_id=623945301]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 470.0
+offset_right = 676.0
+offset_bottom = 520.0
+text = "How to Play"
+
+[node name="HowToPlay" type="Control" parent="." unique_id=1096095224]
+visible = false
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Label" type="Label" parent="HowToPlay" unique_id=716186126]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 90.0
+offset_right = 1043.0
+offset_bottom = 470.0
+theme_override_font_sizes/font_size = 24
+text = "You fell asleep studying and got locked in the library overnight. Your exam is tomorrow morning!
+
+Find all 5 books hidden around the library, then bring them back to the front desk to get out.
+
+Move with WASD or the arrow keys.
+
+Ghosts float through the walls. If one sees you it will follow you, so keep moving. If a ghost touches you, it's over."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Back" type="Button" parent="HowToPlay" unique_id=1732386000]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 500.0
+offset_right = 676.0
+offset_bottom = 550.0
+text = "Back"
+
+[connection signal="button_down" from="Main/Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="Main/Tutorial" to="." method="_on_tutorial_button_down"]
+[connection signal="button_down" from="HowToPlay/Back" to="." method="_on_back_button_down"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Locked In"
-run/main_scene="uid://dkm3epclu05yy"
+run/main_scene="uid://dhf50ue4ie725"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
