@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 100
+var books = 0
 
 
 func _physics_process(delta):
@@ -31,3 +32,8 @@ func _physics_process(delta):
 		$AnimatedSprite2D.play("idle")
 
 	move_and_slide()
+
+
+func add_book():
+	books += 1
+	$CanvasLayer/HBoxContainer/Books.text = "Books: " + str(books) + "/5"
