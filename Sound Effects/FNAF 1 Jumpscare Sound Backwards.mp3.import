@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7intbjbqy1vy"
+path="res://.godot/imported/FNAF 1 Jumpscare Sound Backwards.mp3-be8e45e9e8c209994d5f11f600b7f5cd.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/FNAF 1 Jumpscare Sound Backwards.mp3"
+dest_files=["res://.godot/imported/FNAF 1 Jumpscare Sound Backwards.mp3-be8e45e9e8c209994d5f11f600b7f5cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

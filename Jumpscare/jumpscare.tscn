@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bs2233ijdgjdr" path="res://Animations 2D Game/Jumpscare V2.png" id="1_ioddx"]
 [ext_resource type="Script" uid="uid://1cjld601t5ei" path="res://Jumpscare/jumpscare.gd" id="2_45od6"]
+[ext_resource type="AudioStream" uid="uid://c7intbjbqy1vy" path="res://Sound Effects/FNAF 1 Jumpscare Sound Backwards.mp3" id="3_gni6d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_45od6"]
 atlas = ExtResource("1_ioddx")
@@ -123,5 +124,10 @@ sprite_frames = SubResource("SpriteFrames_2c08n")
 animation = &"jumpscare"
 autoplay = "jumpscare"
 script = ExtResource("2_45od6")
+
+[node name="JumpscareSound" type="AudioStreamPlayer" parent="." unique_id=872079820]
+stream = ExtResource("3_gni6d")
+volume_db = 24.0
+pitch_scale = 2.55
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="AnimatedSprite2D" method="_on_animation_finished"]
