@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b7nnf3ujqbdft"]
+
+[ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="1_h1v8r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qx0kw"]
+size = Vector2(28, 26)
+
+[node name="Armchair" type="StaticBody2D" unique_id=2085893928]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1303658547]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_h1v8r")
+region_enabled = true
+region_rect = Rect2(1820, 1620, 70, 65)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1348477810]
+shape = SubResource("RectangleShape2D_qx0kw")

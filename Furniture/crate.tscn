@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bkai0nu2p47c0"]
+
+[ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="1_lb7j3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nek72"]
+size = Vector2(32, 32)
+
+[node name="Crate" type="StaticBody2D" unique_id=53313799]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=737284320]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_lb7j3")
+region_enabled = true
+region_rect = Rect2(2295, 1520, 80, 80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1578056764]
+shape = SubResource("RectangleShape2D_nek72")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cuwpdixyer6b0"]
+
+[ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="1_ywlo0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fyfgs"]
+size = Vector2(32, 64)
+
+[node name="Bookshelf2" type="StaticBody2D" unique_id=1453101672]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=375043007]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_ywlo0")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1127647158]
+shape = SubResource("RectangleShape2D_fyfgs")
