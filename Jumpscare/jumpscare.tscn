@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cm6usq5rad61c"]
 
 [ext_resource type="Texture2D" uid="uid://bs2233ijdgjdr" path="res://Animations 2D Game/Jumpscare V2.png" id="1_ioddx"]
+[ext_resource type="Script" uid="uid://1cjld601t5ei" path="res://Jumpscare/jumpscare.gd" id="2_45od6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_45od6"]
 atlas = ExtResource("1_ioddx")
@@ -121,3 +122,6 @@ scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_2c08n")
 animation = &"jumpscare"
 autoplay = "jumpscare"
+script = ExtResource("2_45od6")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="AnimatedSprite2D" method="_on_animation_finished"]

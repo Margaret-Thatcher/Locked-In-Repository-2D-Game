@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b2c51kj0sqmcm"]
+
+[ext_resource type="Script" uid="uid://dqog4w4rvf44s" path="res://Furniture/front_desk.gd" id="1_rehly"]
+[ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="2_ukyyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_me8sx"]
+size = Vector2(64, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epf7u"]
+size = Vector2(110, 70)
+
+[node name="FrontDesk" type="StaticBody2D" unique_id=1125853396]
+script = ExtResource("1_rehly")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1029288909]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_ukyyb")
+region_enabled = true
+region_rect = Rect2(1855, 1200, 160, 55)
+
+[node name="Chair" type="Sprite2D" parent="." unique_id=663558482]
+position = Vector2(0, 20)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_ukyyb")
+region_enabled = true
+region_rect = Rect2(1890, 1265, 90, 35)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=961163562]
+shape = SubResource("RectangleShape2D_me8sx")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=727063935]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=9849933]
+shape = SubResource("RectangleShape2D_epf7u")
+
+[node name="Label" type="Label" parent="." unique_id=859465211]
+visible = false
+offset_left = -60.0
+offset_top = -34.0
+offset_right = 100.0
+offset_bottom = -11.0
+theme_override_font_sizes/font_size = 8
+text = "Find all 5 books first!"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dgw7cfyg8w8ry"]
+
+[ext_resource type="Script" uid="uid://df3auqjn15hoh" path="res://Screens/game_over.gd" id="1_rqsc4"]
+
+[node name="GameOver" type="Control" unique_id=2051303482]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_rqsc4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1297310643]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=345964579]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 200.0
+offset_right = 976.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 40
+text = "The ghost got you...
+You never made it to the exam."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TryAgain" type="Button" parent="." unique_id=18228389]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 400.0
+offset_right = 676.0
+offset_bottom = 450.0
+text = "Try Again"
+
+[connection signal="button_down" from="TryAgain" to="." method="_on_try_again_button_down"]
