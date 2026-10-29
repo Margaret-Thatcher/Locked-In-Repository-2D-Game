@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xbldcpespu5f" path="res://Ghost/ghost.gd" id="1_uexgx"]
 [ext_resource type="Texture2D" uid="uid://cekyd2d07cr8y" path="res://Animations 2D Game/Scary Ahh Demon.png" id="2_rhyd0"]
+[ext_resource type="AudioStream" uid="uid://b1ev2rfvu1edb" path="res://Sound Effects/Creepy Wind - Sound Effect [Perfect Cut].mp3" id="3_rhyd0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bs0kc"]
 atlas = ExtResource("2_rhyd0")
@@ -38,6 +39,17 @@ radius = 12.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_sfk03"]
 radius = 150.0
 
+[sub_resource type="Gradient" id="Gradient_bs0kc"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lky7i"]
+gradient = SubResource("Gradient_bs0kc")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
 [node name="Ghost" type="Area2D" unique_id=4503764]
 script = ExtResource("1_uexgx")
 
@@ -53,6 +65,17 @@ shape = SubResource("CircleShape2D_7g10s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vision" unique_id=897250917]
 shape = SubResource("CircleShape2D_sfk03")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1644340927]
+color = Color(0.55, 1, 0.45, 1)
+energy = 0.8
+texture = SubResource("GradientTexture2D_lky7i")
+texture_scale = 0.5
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1375228017]
+stream = ExtResource("3_rhyd0")
+autoplay = true
+max_distance = 400.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]
