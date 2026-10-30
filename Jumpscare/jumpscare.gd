@@ -9,6 +9,6 @@ func play_jumpscare():
 	play("jumpscare")
 	jumpscare_sound.play()
 
-func _on_animation_finished():
-	if animation == "jumpscare":
-		get_tree().change_scene_to_file("res://Screens/game_over.tscn")
+# go to game over once the scream is done
+func _on_jumpscare_sound_finished():
+	get_tree().change_scene_to_file("res://Screens/game_over.tscn")

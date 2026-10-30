@@ -254,6 +254,15 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "Books: 0/5"
 
+[node name="ReturnMessage" type="Label" parent="CanvasLayer" unique_id=539136380]
+visible = false
+offset_left = 20.0
+offset_top = 60.0
+offset_right = 620.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 24
+text = "You have all the books! Go back to the front desk."
+
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=964106306]
 color = Color(1, 0.92, 0.75, 1)
 texture = SubResource("GradientTexture2D_fhl08")
@@ -262,3 +271,8 @@ texture_scale = 0.6
 [node name="Footsteps" type="AudioStreamPlayer" parent="." unique_id=374833500]
 stream = ExtResource("6_k9f6e")
 volume_db = -6.0
+
+[node name="Arrow" type="Polygon2D" parent="." unique_id=1255455240]
+visible = false
+color = Color(1, 0.85, 0.2, 1)
+polygon = PackedVector2Array(14, -2, 22, -2, 22, -6, 30, 0, 22, 6, 22, 2, 14, 2)
