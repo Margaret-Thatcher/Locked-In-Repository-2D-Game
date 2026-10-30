@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://im0mkregyfal"]
+
+[ext_resource type="Texture2D" uid="uid://cvw81mpt0wkm3" path="res://IMG_5283.PNG" id="1_7cbgn"]
+
+[node name="Control" type="Control" unique_id=104657633]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1359417830]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1496222339]
+layout_mode = 0
+offset_left = -259.0
+offset_top = -470.0
+offset_right = 1762.0
+offset_bottom = 1551.0
+texture = ExtResource("1_7cbgn")
+expand_mode = 1

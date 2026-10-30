@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ttb8rgpn3atw" path="res://Screens/start_screen.gd" id="1_1kmab"]
 [ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="2_fo2qh"]
+[ext_resource type="FontFile" uid="uid://dl5rd7vudtjm6" path="res://Ithaca-LVB75.ttf" id="3_fo2qh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x20jx"]
 atlas = ExtResource("2_fo2qh")
@@ -29,6 +30,121 @@ anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 
+[node name="Node2D" type="Node2D" parent="Main" unique_id=479916183]
+position = Vector2(-8, -6)
+
+[node name="Bookshelf1" type="Sprite2D" parent="Main/Node2D" unique_id=10550061]
+position = Vector2(42.000004, 393.00003)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
+[node name="Bookshelf2" type="Sprite2D" parent="Main/Node2D" unique_id=498444257]
+position = Vector2(114.5, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="Bookshelf3" type="Sprite2D" parent="Main/Node2D" unique_id=874938574]
+position = Vector2(187, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1440, 80, 160)
+
+[node name="Bookshelf4" type="Sprite2D" parent="Main/Node2D" unique_id=1621365065]
+position = Vector2(260, 393.00003)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
+[node name="Bookshelf5" type="Sprite2D" parent="Main/Node2D" unique_id=1306694351]
+position = Vector2(332.5, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="Bookshelf6" type="Sprite2D" parent="Main/Node2D" unique_id=1638873861]
+position = Vector2(405, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1440, 80, 160)
+
+[node name="Bookshelf7" type="Sprite2D" parent="Main/Node2D" unique_id=1771658913]
+position = Vector2(478, 393)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
+[node name="Bookshelf8" type="Sprite2D" parent="Main/Node2D" unique_id=780059758]
+position = Vector2(550.5, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="Bookshelf9" type="Sprite2D" parent="Main/Node2D" unique_id=467700848]
+position = Vector2(623, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1440, 80, 160)
+
+[node name="Bookshelf10" type="Sprite2D" parent="Main/Node2D" unique_id=1669696299]
+position = Vector2(696, 393)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
+[node name="Bookshelf11" type="Sprite2D" parent="Main/Node2D" unique_id=260852025]
+position = Vector2(768.5, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="Bookshelf12" type="Sprite2D" parent="Main/Node2D" unique_id=1968413351]
+position = Vector2(841, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1440, 80, 160)
+
+[node name="Bookshelf13" type="Sprite2D" parent="Main/Node2D" unique_id=1586078574]
+position = Vector2(914, 393)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
+[node name="Bookshelf14" type="Sprite2D" parent="Main/Node2D" unique_id=1111367020]
+position = Vector2(986.5, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(1975, 1680, 80, 160)
+
+[node name="Bookshelf15" type="Sprite2D" parent="Main/Node2D" unique_id=496097887]
+position = Vector2(1059, 393)
+scale = Vector2(0.8874997, 0.8874997)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1440, 80, 160)
+
+[node name="Bookshelf16" type="Sprite2D" parent="Main/Node2D" unique_id=663465335]
+position = Vector2(1132.0001, 393.00003)
+scale = Vector2(0.8875, 0.8875)
+texture = ExtResource("2_fo2qh")
+region_enabled = true
+region_rect = Rect2(2135, 1680, 80, 160)
+
 [node name="Title" type="TextureRect" parent="Main" unique_id=1020045273]
 layout_mode = 0
 offset_left = 248.0
@@ -51,6 +167,8 @@ offset_left = 476.0
 offset_top = 470.0
 offset_right = 676.0
 offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("3_fo2qh")
+theme_override_font_sizes/font_size = 40
 text = "How to Play"
 
 [node name="HowToPlay" type="Control" parent="." unique_id=1096095224]
@@ -65,6 +183,7 @@ offset_left = 176.0
 offset_top = 90.0
 offset_right = 1043.0
 offset_bottom = 470.0
+theme_override_fonts/font = ExtResource("3_fo2qh")
 theme_override_font_sizes/font_size = 24
 text = "You fell asleep studying and got locked in the library overnight. Your exam is tomorrow morning!
 
