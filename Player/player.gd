@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 100
 var books = 0
+var desk
 
 
 func _physics_process(delta):
@@ -36,7 +37,15 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+	# point the arrow at the front desk
+	if books >= 5:
+		$Arrow.look_at(desk.global_position)
+
 
 func add_book():
 	books += 1
 	$CanvasLayer/HBoxContainer/Books.text = "Books: " + str(books) + "/5"
+	if books == 5:
+		desk = get_node("../FrontDesk")
+		$CanvasLayer/ReturnMessage.show()
+		$Arrow.show()
