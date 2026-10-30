@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d30bht8k7xll5" path="res://Animations 2D Game/Book Collect.png" id="1_ep12a"]
 [ext_resource type="Script" uid="uid://by5uwid6n5k5q" path="res://Book/book.gd" id="2_og7aq"]
+[ext_resource type="AudioStream" uid="uid://d4drvqkpuhxlt" path="res://Sound Effects/GOOD PAGE TURN.mp3" id="3_og7aq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rfucn"]
 atlas = ExtResource("1_ep12a")
@@ -84,6 +85,10 @@ script = ExtResource("2_og7aq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1291411233]
 shape = SubResource("CircleShape2D_dnkto")
+
+[node name="FlipSound" type="AudioStreamPlayer2D" parent="." unique_id=441961687]
+stream = ExtResource("3_og7aq")
+volume_db = 0.673
 
 [connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
