@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://du28w6krv1288"]
+
+[ext_resource type="Texture2D" uid="uid://bi8e2xj0lgw8s" path="res://Animations 2D Game/You Passed!.png" id="1_hhxvf"]
+[ext_resource type="Script" uid="uid://7ogajnhgxigh" path="res://Screens/you_passed!.gd" id="2_x5qjc"]
+
+[node name="Node2D" type="Node2D" unique_id=22520246]
+
+[node name="YouPassed!" type="Sprite2D" parent="." unique_id=973575469]
+position = Vector2(651, 320.00003)
+scale = Vector2(5.9296875, 5.7539063)
+texture = ExtResource("1_hhxvf")
+script = ExtResource("2_x5qjc")

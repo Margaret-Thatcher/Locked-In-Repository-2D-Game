@@ -79,12 +79,6 @@ shape = SubResource("RectangleShape2D_q81ee")
 
 [node name="Furniture" type="Node2D" parent="." unique_id=1415459450]
 
-[node name="Bookshelf1" parent="Furniture" unique_id=1453101672 instance=ExtResource("2_nlfmh")]
-position = Vector2(16, 96)
-
-[node name="Bookshelf2" parent="Furniture" unique_id=1722502368 instance=ExtResource("3_82531")]
-position = Vector2(48, 96)
-
 [node name="Bookshelf3" parent="Furniture" unique_id=1072422040 instance=ExtResource("4_u10yp")]
 position = Vector2(80, 96)
 
@@ -157,9 +151,6 @@ position = Vector2(1200, 96)
 [node name="Bookshelf26" parent="Furniture" unique_id=581163422 instance=ExtResource("3_82531")]
 position = Vector2(1232, 96)
 
-[node name="Bookshelf27" parent="Furniture" unique_id=1834132186 instance=ExtResource("4_u10yp")]
-position = Vector2(1264, 96)
-
 [node name="Bookshelf28" parent="Furniture" unique_id=1318797552 instance=ExtResource("2_nlfmh")]
 position = Vector2(944, 224)
 
@@ -201,9 +192,6 @@ position = Vector2(464, 768)
 
 [node name="Bookshelf41" parent="Furniture" unique_id=1978168113 instance=ExtResource("3_82531")]
 position = Vector2(464, 832)
-
-[node name="Bookshelf42" parent="Furniture" unique_id=925246249 instance=ExtResource("4_u10yp")]
-position = Vector2(464, 896)
 
 [node name="Bookshelf43" parent="Furniture" unique_id=1187726169 instance=ExtResource("2_nlfmh")]
 position = Vector2(816, 576)
@@ -259,9 +247,6 @@ position = Vector2(400, 640)
 [node name="Bookshelf60" parent="Furniture" unique_id=311747906 instance=ExtResource("4_u10yp")]
 position = Vector2(432, 640)
 
-[node name="Bookshelf61" parent="Furniture" unique_id=1728514860 instance=ExtResource("2_nlfmh")]
-position = Vector2(16, 800)
-
 [node name="Bookshelf62" parent="Furniture" unique_id=1925220237 instance=ExtResource("3_82531")]
 position = Vector2(48, 800)
 
@@ -276,9 +261,6 @@ position = Vector2(144, 800)
 
 [node name="Bookshelf66" parent="Furniture" unique_id=2062424060 instance=ExtResource("4_u10yp")]
 position = Vector2(176, 800)
-
-[node name="Bookshelf67" parent="Furniture" unique_id=1998929522 instance=ExtResource("2_nlfmh")]
-position = Vector2(208, 800)
 
 [node name="Bookshelf68" parent="Furniture" unique_id=1996922153 instance=ExtResource("3_82531")]
 position = Vector2(240, 800)
@@ -412,9 +394,6 @@ position = Vector2(1200, 800)
 [node name="Bookshelf111" parent="Furniture" unique_id=747873622 instance=ExtResource("4_u10yp")]
 position = Vector2(1232, 800)
 
-[node name="Bookshelf112" parent="Furniture" unique_id=817996348 instance=ExtResource("2_nlfmh")]
-position = Vector2(1264, 800)
-
 [node name="Cabinet1" parent="Furniture" unique_id=1070821759 instance=ExtResource("5_nexyt")]
 position = Vector2(17, 470)
 
@@ -434,7 +413,7 @@ position = Vector2(220, 470)
 position = Vector2(1060, 470)
 
 [node name="Crate1" parent="Furniture" unique_id=53313799 instance=ExtResource("8_b4dsf")]
-position = Vector2(416, 896)
+position = Vector2(385, 882)
 
 [node name="Crate2" parent="Furniture" unique_id=126448562 instance=ExtResource("8_b4dsf")]
 position = Vector2(864, 896)

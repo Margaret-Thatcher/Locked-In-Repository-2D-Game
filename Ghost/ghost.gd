@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 1
+@export var speed = 0.75
 @export var patrol = 100
 var state = "idle"
 var target
