@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://ttb8rgpn3atw" path="res://Screens/start_screen.gd" id="1_1kmab"]
 [ext_resource type="Texture2D" uid="uid://c140tkg1r1bqj" path="res://startandlibraryitems.PNG" id="2_fo2qh"]
-[ext_resource type="FontFile" uid="uid://dl5rd7vudtjm6" path="res://Ithaca-LVB75.ttf" id="3_fo2qh"]
+[ext_resource type="Texture2D" uid="uid://ljudn1pbyowr" path="res://itemsP2.PNG" id="3_x20jx"]
+[ext_resource type="Texture2D" uid="uid://cxxmc002umad2" path="res://tutorialtext.PNG" id="4_x20jx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x20jx"]
 atlas = ExtResource("2_fo2qh")
@@ -11,6 +12,14 @@ region = Rect2(890, 625, 655, 165)
 [sub_resource type="AtlasTexture" id="AtlasTexture_1oc81"]
 atlas = ExtResource("2_fo2qh")
 region = Rect2(1050, 830, 400, 95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4suau"]
+atlas = ExtResource("3_x20jx")
+region = Rect2(1470, 1162, 560, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxl28"]
+atlas = ExtResource("4_x20jx")
+region = Rect2(1421, 3339, 973, 105)
 
 [node name="StartScreen" type="Control" unique_id=415436299]
 layout_mode = 3
@@ -161,15 +170,15 @@ offset_right = 776.0
 offset_bottom = 435.0
 texture_normal = SubResource("AtlasTexture_1oc81")
 
-[node name="Tutorial" type="Button" parent="Main" unique_id=623945301]
+[node name="Tutorial" type="TextureButton" parent="Main" unique_id=1792629711]
 layout_mode = 0
-offset_left = 476.0
-offset_top = 470.0
-offset_right = 676.0
-offset_bottom = 520.0
-theme_override_fonts/font = ExtResource("3_fo2qh")
-theme_override_font_sizes/font_size = 40
-text = "How to Play"
+offset_left = 376.0
+offset_top = 467.0
+offset_right = 776.00006
+offset_bottom = 562.0
+texture_normal = SubResource("AtlasTexture_4suau")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="HowToPlay" type="Control" parent="." unique_id=1096095224]
 visible = false
@@ -177,31 +186,22 @@ anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="Label" type="Label" parent="HowToPlay" unique_id=716186126]
+[node name="Label" type="Sprite2D" parent="HowToPlay" unique_id=1151377103]
+position = Vector2(516.93774, 263.06265)
+scale = Vector2(0.35055357, 0.35055357)
+texture = ExtResource("4_x20jx")
+region_enabled = true
+region_rect = Rect2(1225, 1924, 2636, 1340)
+
+[node name="Back" type="TextureButton" parent="HowToPlay" unique_id=1786910550]
 layout_mode = 0
-offset_left = 176.0
-offset_top = 90.0
-offset_right = 1043.0
-offset_bottom = 470.0
-theme_override_fonts/font = ExtResource("3_fo2qh")
-theme_override_font_sizes/font_size = 24
-text = "You fell asleep studying and got locked in the library overnight. Your exam is tomorrow morning!
-
-Find all 5 books hidden around the library, then bring them back to the front desk to get out.
-
-Move with WASD or the arrow keys.
-
-Ghosts float through the walls. If one sees you it will follow you, so keep moving. If a ghost touches you, it's over."
-horizontal_alignment = 1
-autowrap_mode = 3
-
-[node name="Back" type="Button" parent="HowToPlay" unique_id=1732386000]
-layout_mode = 0
-offset_left = 476.0
-offset_top = 500.0
-offset_right = 676.0
-offset_bottom = 550.0
-text = "Back"
+offset_left = 376.0
+offset_top = 528.0
+offset_right = 774.4667
+offset_bottom = 571.0
+texture_normal = SubResource("AtlasTexture_vxl28")
+ignore_texture_size = true
+stretch_mode = 5
 
 [connection signal="button_down" from="Main/Start" to="." method="_on_start_button_down"]
 [connection signal="button_down" from="Main/Tutorial" to="." method="_on_tutorial_button_down"]
