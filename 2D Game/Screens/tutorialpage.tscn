@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://im0mkregyfal"]
 
-[ext_resource type="Texture2D" uid="uid://cvw81mpt0wkm3" path="res://IMG_5283.PNG" id="1_7cbgn"]
+[ext_resource type="Texture2D" uid="uid://cvw81mpt0wkm3" path="res://tutorialtext.PNG" id="1_7cbgn"]
 
 [node name="Control" type="Control" unique_id=104657633]
 layout_mode = 3
